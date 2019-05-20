@@ -3,7 +3,7 @@
 function getURLParameters(whichParam)
 {
 	var pageURL = window.location.search.substring(1);
-	var pageURLVariables - pageURL.split('&');
+	var pageURLVariables = pageURL.split('&');
 	for(var i = 0; i < pageURLVariables.length; i++){
 		var parameterName = pageURLVariables(i).split('=';
 		if(parameterName(0) == whichParam{

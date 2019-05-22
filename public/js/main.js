@@ -103,7 +103,7 @@ socket.on('join_room_response',function(payload){
 
 /* what to do when the server says someone has left the room */
 
-socket.on('player_disconneted',function(payload){
+socket.on('player_disconnected',function(payload){
 	if(payload.result == 'fail'){
 		alert(payload.message);
 		return;

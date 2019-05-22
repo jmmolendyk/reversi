@@ -37,7 +37,7 @@ console.log('The server is running');
 /* set up the web socket server */
 
 
-/*  A registry of scoket ids and player information   */
+/*  A registry of socket ids and player information   */
 
 var players = [];
 

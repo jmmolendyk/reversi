@@ -1,6 +1,6 @@
 body {
 
-	background-image: url('bg.png');
+	background-color: #D2D2CA;
 }
 
 table#game_board{
@@ -22,7 +22,7 @@ margin: 0px;
 }
 
 td.hovered_over:hover{
-	background: url('hover.gif'), rgb(0,255,0);
+	background: url('../images/hover.gif'), rgb(0,255,0);
 	background-size: 100% 100%;
 }
 

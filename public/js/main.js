@@ -300,7 +300,7 @@ $(function(){
 	console.log('*** client log message: \'join_room\' payload: '+JSON.stringify(payload));
 	socket.emit('join_room',payload);
 
-	$('#quit').append('<a href="Lobby.html?username= '+username+'" class="btn btn-danger btn-default active" role="button" aria-pressed=true">Quit</a>');
+	$('#quit').append('<a href="Lobby.html?username='+username+'" class="btn btn-danger btn-default active" role="button" aria-pressed=true">Quit</a>');
 
 
 });

@@ -226,7 +226,7 @@ io.sockets.on('connection', function (socket) {
 							};
 
 io.in(room).emit('send_message_response', success_data);
-log('Message sent to room ' + room + ' by ' + username);
+log('Message sent to room ' + room + ' by ' +username);
 });
 
 

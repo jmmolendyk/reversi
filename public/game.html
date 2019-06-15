@@ -14,30 +14,31 @@
 
   </head>
   <body>
-    <div class='container-fluid text-center'>
+    <div class='container-fluid text-center' style='width: 720px;'>
+    <div>
     	<div class='row'>
-    		<div class='offset-2 col text-center'>
-    			<h3 id='my_color'></h3>
-    		</div>
-    		<div class='col-2'>
-    			<div id='quit'></div>
-    		</div>
-    	</div>
-
-    	<div class='row'>
-    		<div class='col'>
+    		<div class='col scorespacing'>
     		<span class='align-middle' id='whitesum'></span>
     		<img src='assets/images/empty_to_white.gif' alt='white score'/>
 			<img src='assets/images/empty_to_black.gif' alt='black score'/>
 			<span class='align-middle' id='blacksum'></span>
     		</div>
+
     	</div>
 
     	<div class='row'>
     		<div class='col' id='game_over'>
     		</div>
     	</div>
-
+        <div class='row'>
+            <div class='col text-left'>
+                <div id='my_color'></div>
+            </div>
+            <div class='col-2'>
+                <div id='quit'></div>
+            </div>
+        </div>
+    </div>
     	<div class='row'>
     		<div class='col'>
     			<table id='game_board'>
@@ -127,7 +128,7 @@
 
         <div class='row'>
         <div class='col text-left'>
-       
+       <p>
         <h3>Messages</h3>
           <form class='form-inline' onsubmit='send_message(); return false;'>
           
@@ -137,7 +138,7 @@
 id='send_message_holder' placeholder='Enter your chat message' autocomplete='off'/>
            <button type='submit' class='btn btn-default btn-primary'>Send</button>
           </form>
-
+        </p>
           </div>
       </div> 
 

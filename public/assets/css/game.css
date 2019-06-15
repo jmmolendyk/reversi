@@ -1,20 +1,21 @@
 body {
 
-	background-color: #D2D2CA;
+	background-color: #f8f3ee;
 }
 
 table#game_board{
 margin: auto;
 border-style: solid;
-border-width: 10px;
-border-color: rgb(100,100,100);
+border-width: 4px;
+border-color: #94618E;
+background-color: #f1e8dd;
 }
 
 table#game_board td{
-padding: 5px;
+padding: 10px;
 border-style: solid;
 border-width: 1px;
-border-color: rgb(50,50,50);
+border-color: #94618E;
 }
 
 #messages p{
@@ -26,3 +27,16 @@ td.hovered_over:hover{
 	background-size: 100% 100%;
 }
 
+#whitesum, #blacksum{
+	font-size: 26px;
+}
+
+.scorespacing{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.bth-outline-extra {
+	border: purple;
+	font: purple;
+}

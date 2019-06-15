@@ -352,8 +352,8 @@ socket.on('game_update',function(payload){
 		}
 	
 
-	$('#my_color').html('<h3 id="my_color">I am '+my_color+'</h3>');
-	$('#my_color').append('<h4>It is '+payload.game.whose_turn+'\'s turn. Elapsed Time <span id="elapsed"></span></h4>');
+	$('#my_color').html('<div id="my_color">your game color: '+my_color+'</br>player up: '+payload.game.whose_turn+'</br>player\'s name: ' +username+'</br>');
+	$('#my_color').append('<div class="text-left">elapsed time: <span id="elapsed"></span></div></div>');
 
 	clearInterval(interval_timer);
 	interval_timer = setInterval(function(last_time){

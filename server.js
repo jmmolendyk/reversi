@@ -514,7 +514,7 @@ log('Message sent to room ' + room + ' by ' +username);
 		if(('undefined' === typeof game_id) || !game_id){
 			var error_message = 'play_token can not find your game board';
 			log(error_message);
-			socket.emit('game_id_response',   {
+			socket.emit('play_token_response',   {
 													result: 'fail',
 													message: error_message
 												});
@@ -525,7 +525,7 @@ log('Message sent to room ' + room + ' by ' +username);
 		if(('undefined' === typeof row) || row < 0 || row > 7){
 			var error_message = 'play_token did not specify a row';
 			log(error_message);
-			socket.emit('game_id_response',   {
+			socket.emit('play_token_response',   {
 													result: 'fail',
 													message: error_message
 												});
@@ -536,7 +536,7 @@ log('Message sent to room ' + room + ' by ' +username);
 		if(('undefined' === typeof column) || column < 0 || column > 7){
 			var error_message = 'play_token did not specify a column';
 			log(error_message);
-			socket.emit('game_id_response',   {
+			socket.emit('play_token_response',   {
 													result: 'fail',
 													message: error_message
 												});
@@ -546,7 +546,7 @@ log('Message sent to room ' + room + ' by ' +username);
 		if(('undefined' === typeof color) || !color || (color != 'white' && color != 'black')){
 			var error_message = 'play_token did not specify a valid color';
 			log(error_message);
-			socket.emit('game_id_response',   {
+			socket.emit('play_token_response',   {
 													result: 'fail',
 													message: error_message
 												});
@@ -557,7 +557,7 @@ log('Message sent to room ' + room + ' by ' +username);
 		if(('undefined' === typeof game) || !game){
 			var error_message = 'play_token did not find your game board';
 			log(error_message);
-			socket.emit('game_id_response',   {
+			socket.emit('play_token_response',   {
 													result: 'fail',
 													message: error_message
 												});
@@ -568,7 +568,7 @@ log('Message sent to room ' + room + ' by ' +username);
 		if(color !== game.whose_turn){
 			var error_message = 'play_token message played out of turn';
 			log(error_message);
-			socket.emit('game_id_response',   {
+			socket.emit('play_token_response',   {
 													result: 'fail',
 													message: error_message
 												});

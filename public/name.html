@@ -10,6 +10,8 @@
 
     <title>Enter your user name for Reversi</title>
 
+<link rel='stylesheet' type='text/css' href='assets/css/game.css'/>
+
     <script>
       function submitForm() {
         var username = $('#username').val();
@@ -18,15 +20,16 @@
     </script>
   </head>
   <body>
-    <div class="container-fluid text-center">
+    <div class='container-fluid' style='width: 720px;'>
+    <div class="container-fluid">
 
-      <div class="row" id="header-row">
+      <div class="row" id="header-row" style="padding-top: 42px;">
         <div class="col">
-          <h2>Enter your username to play Reversi</h2>
+          <h4>Enter your username to play Reversi</h4>
         </div>
       </div>
 
-      <div class="row">
+      <div class="row" style="padding-top: 42px;">
 
         <div class="col">
 
@@ -34,7 +37,7 @@
             <div class='form-group'>
 
             <label for='username' class='col-form-label sr-only'>Enter your user name</label>
-            <input class='form-control' type='text' value='' id='username' placeholder='Enter your user name'/>
+            <input class='form-control' type='text' value='' id='username' placeholder='Enter your user name'/>&nbsp;
           </div>
           <button type='submit' class='btn btn-default btn-primary'>Done</button>
         </form>
@@ -42,6 +45,7 @@
       </div>  
 
     </div>
+  </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

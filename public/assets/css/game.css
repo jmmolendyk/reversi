@@ -23,7 +23,7 @@ margin: 0px;
 }
 
 td.hovered_over:hover{
-	background: url('../images/hover.gif'), rgb(0,255,0);
+	background: url('../images/hover.gif'), #674363;
 	background-size: 100% 100%;
 }
 
@@ -39,4 +39,9 @@ td.hovered_over:hover{
 .bth-outline-extra {
 	border: purple;
 	font: purple;
+}
+
+h4, h3, h2 {
+	padding-top: 12px;
+	padding-bottom: 8px;
 }
